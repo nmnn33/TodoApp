@@ -1,66 +1,84 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>Monday</ion-title>
+    <!--PROFILE PICTURE-->
+    <ion-avatar slot="end">
+      <!--PLACEHOLDER PICTURE FOR PROOF-->
+      <img src="https://i.imgur.com/MfrhA8R.jpg">
+    </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
 <!--  -->
 <ion-content>
-<!--  -->
-<h1>Monday</h1>
-<!-- br to create some space -->
-<br>
-<h4>Welcome! Here you can see todays tasks</h4>
-<ion-grid [fixed]="true">
-  
-
-<!-- ion-row and ion-col used to make content apper as wanted.
-One (1) task for each row-->
-<ion-row>
-  <!-- size 9 used to make checkox and delete appear as wanted-->
-<ion-col size="9">
- <ion-checkbox></ion-checkbox>
- <!-- Here would be task 1-->
-  Checkbox Task1
-</ion-col>
-
-<ion-col>
-  <!-- Button for task deletion, colored red "danger"
-  used with each task -->
-  <ion-button size="small" color="danger">Delete</ion-button>
-</ion-col>
-</ion-row>
-<!--HERE ENDS TASK1 ROW AND BEGINS TASK2 ROW-->
-<ion-row>
-  <ion-col size="9">
-   <ion-checkbox></ion-checkbox>
-    Checkbox Task2
-  </ion-col>
-
-  <ion-col >
-    <ion-button size="small" color="danger">Delete</ion-button>
-  </ion-col>
-  </ion-row>
+  <!--HEADER FOR PAGE (MONDAY)-->
   <ion-row>
-    <ion-col size="9">
-     <ion-checkbox></ion-checkbox>
-      Checkbox Task3
+    <ion-col>
+      <ion-list-header>
+        <h1>Welcome</h1>
+      </ion-list-header>
     </ion-col>
+    <ion-col>
+      <!--PLACEHOLDER FOR DUMMY CONTENT-->
+    </ion-col>
+  </ion-row>
+  
+  <h4>Here you can see todays tasks</h4>
+  <ion-grid [fixed]="true">
 
-    <ion-col >
-      <ion-button size="small" color="danger">Delete</ion-button>
-    </ion-col>
+    <!-- ion-row and ion-col used to make content apper as wanted.
+One (1) task for each row-->
+    <ion-row>
+      <!-- size 9 used to make checkox and delete appear as wanted-->
+      <ion-col size="9" class="col-up">
+        <ion-checkbox></ion-checkbox>
+        <!-- Here would be task 1-->
+        Checkbox Task1
+      </ion-col>
+
+      <ion-col>
+        <!-- Button for task deletion, colored red "danger"
+  used with each task -->
+        <ion-button size="small" color="danger">Delete</ion-button>
+      </ion-col>
+    </ion-row>
+    <!--HERE ENDS TASK1 ROW AND BEGINS TASK2 ROW-->
+    <ion-row>
+      <ion-col size="9">
+        <ion-checkbox></ion-checkbox>
+        Checkbox Task2
+      </ion-col>
+
+      <ion-col>
+        <ion-button size="small" color="danger">Delete</ion-button>
+      </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="9">
-       <ion-checkbox></ion-checkbox>
+        <ion-checkbox></ion-checkbox>
+        Checkbox Task3
+      </ion-col>
+
+      <ion-col>
+        <ion-button size="small" color="danger">Delete</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="9">
+        <ion-checkbox></ion-checkbox>
         Checkbox Task4
       </ion-col>
 
-      <ion-col >
+      <ion-col>
         <ion-button size="small" color="danger">Delete</ion-button>
       </ion-col>
-      </ion-row>
-</ion-grid>
+    </ion-row>
+  </ion-grid>
+  <!--BUTTON FOR ADDING A NEW TASK-->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>
