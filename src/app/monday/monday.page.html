@@ -1,9 +1,67 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>monday</ion-title>
+    <ion-title>Monday</ion-title>
   </ion-toolbar>
 </ion-header>
-terve maanantai!!!!
+
+<!-- Class for CSS -->
 <ion-content>
+<!--  -->
+<h1>Monday</h1>
+<!-- br to create some space -->
+<br>
+<h4>Welcome! Here you can see todays tasks</h4>
+<ion-grid [fixed]="true">
+  
+
+<!-- ion-row and ion-col used to make content apper as wanted.
+One (1) task for each row-->
+<ion-row>
+<ion-col size="9">
+ <!-- NEED CHECKBOX -->
+ <ion-checkbox></ion-checkbox>
+  Checkbox Task1
+</ion-col>
+
+<ion-col>
+  <!-- Button for task deletion, colored red "danger"
+  used with each task -->
+  <ion-button size="small" color="danger">Delete</ion-button>
+</ion-col>
+</ion-row>
+<ion-row>
+  <ion-col size="9">
+   <!-- NEED CHECKBOX -->
+   <ion-checkbox></ion-checkbox>
+    Checkbox Task2
+  </ion-col>
+
+  <ion-col >
+    <ion-button size="small" color="danger">Delete</ion-button>
+  </ion-col>
+  </ion-row>
+  <ion-row>
+    <ion-col size="9">
+     <!-- NEED CHECKBOX -->
+     <ion-checkbox></ion-checkbox>
+      Checkbox Task3
+    </ion-col>
+
+    <ion-col >
+      <ion-button size="small" color="danger">Delete</ion-button>
+    </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="9">
+       <!-- NEED CHECKBOX -->
+       <ion-checkbox></ion-checkbox>
+        Checkbox Task4
+      </ion-col>
+
+      <ion-col >
+        <ion-button size="small" color="danger">Delete</ion-button>
+      </ion-col>
+      </ion-row>
+</ion-grid>
 
 </ion-content>
