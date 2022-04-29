@@ -2,23 +2,47 @@
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
-        <ion-list id="inbox-list">
-          <ion-list-header>To-Do-App</ion-list-header>
-
+        <ion-list id="lista">
+          <!--Tässä on kuva ja nappi sulkea sidebar sekä nimi käyttäjälle, joka on nyt User Testing-->
+          <ion-item>
+            <ion-avatar slot="start">
+              <img src="https://i.imgur.com/MfrhA8R.jpg">
+            </ion-avatar>
+            <ion-button slot="end" fill="clear" class="sulje">
+              <ion-menu-toggle>
+                <ion-icon name="close-outline" class="suljeIcon"></ion-icon>
+              </ion-menu-toggle>
+            </ion-button>
+          </ion-item>
+          <ion-list-header>User Testing</ion-list-header>
+          <hr>
+          <!--Tässä on home ja addtask-->
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appEssentials; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+              routerLinkActive="selected">
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+          <hr>
+          <!--Tässä on viikonpäivät-->
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
               routerLinkActive="selected">
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
+          <hr>
+          <!--Tässä on logout ja kuva-->
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerDirection="root" [routerLink]="['./login']" lines="none" detail="false"
+              routerLinkActive="selected">
+              <ion-label>Sign out</ion-label>
+              <img
+                src="https://media.istockphoto.com/vectors/checklist-clipboard-and-pencil-icon-flat-design-on-white-background-vector-id1269452744?s=612x612"
+                class="alaKuva">
+            </ion-item>
+          </ion-menu-toggle>
         </ion-list>
-
-        <ion-menu-toggle auto-hide="false">
-          <ion-item routerDirection="root" [routerLink]="['./home']" lines="none" detail="false"
-            routerLinkActive="selected">
-            <ion-label>Logout</ion-label>
-          </ion-item>
-        </ion-menu-toggle>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>

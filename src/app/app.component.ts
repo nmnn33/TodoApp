@@ -6,8 +6,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Home', url: 'home', icon: 'mail' },
-    { title: 'Add task', url: 'home', icon: 'paper-plane' },
     { title: 'Monday', url: 'monday' },
     { title: 'Tuesday', url: 'tuesday' },
     { title: 'Wednesday', url: 'wednesday' },
@@ -16,6 +14,9 @@ export class AppComponent {
     { title: 'Saturday', url: 'saturday' },
     { title: 'Sunday', url: 'sunday' },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+  public appEssentials = [
+    { title: 'Home', url: 'home', icon: 'mail' },
+    { title: 'Add task', url: 'home', icon: 'paper-plane' },
+  ];
   constructor() {}
 }

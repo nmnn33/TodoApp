@@ -117,3 +117,19 @@ ion-note {
 ion-item.selected {
   --color: var(--ion-color-primary);
 }
+//Tästä eteenpäin omat jutut
+ion-icon.suljeIcon {
+  font-size: 50px;
+}
+hr {
+  border: 1px solid #7C238C !important;
+  width: 100% !important;
+  background: #7C238C !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+img.alaKuva{
+  width: 22%;
+  height: 35%;
+}
