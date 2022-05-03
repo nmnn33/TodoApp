@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { PopoverController } from '@ionic/angular';
+import { Router } from '@angular/router';
+import { AddPage } from '../add/add.page';
 
 @Component({
   selector: 'app-monday',
@@ -7,9 +10,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MondayPage implements OnInit {
 
-  constructor() { }
+  constructor(private popoverCtrl: PopoverController, private router: Router) { }
 
   ngOnInit() {
   }
 
-}
+  async itemAdd (ev) {
+    const popover = await this.popoverCtrl.create({
+      component: AddPage,
+      event: ev,
+      cssClass: 'custom-popover'
+    })
+  
+    await popover.present();
+  }
+  
+  }

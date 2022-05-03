@@ -56,7 +56,11 @@ const routes: Routes = [
     path: 'sunday',
     loadChildren: () =>
       import('./sunday/sunday.module').then((m) => m.SundayPageModule),
+  },  {
+    path: 'add',
+    loadChildren: () => import('./add/add.module').then( m => m.AddPageModule)
   },
+
 ];
 
 @NgModule({
