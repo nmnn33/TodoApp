@@ -15,8 +15,8 @@ export class AppComponent {
     { title: 'Sunday', url: 'sunday' },
   ];
   public appEssentials = [
-    { title: 'Home', url: 'home', icon: 'mail' },
-    { title: 'Add task', url: 'home', icon: 'paper-plane' },
+    { title: 'Home', url: 'home' },
+    { title: 'Add task', url: 'add' },
   ];
   constructor() {}
 }

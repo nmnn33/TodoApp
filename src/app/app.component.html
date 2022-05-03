@@ -17,10 +17,14 @@
           <ion-list-header>User Testing</ion-list-header>
           <hr>
           <!--Tässä on home ja addtask-->
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appEssentials; let i = index">
-            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+          <ion-menu-toggle auto-hide="false">
+            <ion-item routerDirection="root" [routerLink]="['./home']" lines="none" detail="false"
               routerLinkActive="selected">
-              <ion-label>{{ p.title }}</ion-label>
+              <ion-label>Home</ion-label>
+            </ion-item>
+            <ion-item routerDirection="root" [routerLink]="['./add']" lines="none" detail="false"
+              routerLinkActive="selected">
+              <ion-label>Add task</ion-label>
             </ion-item>
           </ion-menu-toggle>
           <hr>
