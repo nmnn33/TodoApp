@@ -76,7 +76,7 @@ One (1) task for each row-->
   </ion-grid>
   <!--BUTTON FOR ADDING A NEW TASK-->
   <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-    <ion-fab-button color="danger">
+    <ion-fab-button tappable (click)="itemAdd($event)">
       <ion-icon name="add"></ion-icon>
     </ion-fab-button>
   </ion-fab>

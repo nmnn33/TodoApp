@@ -24,3 +24,31 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.custom-popover {
+    --ion-backdrop-opacity: 0.6;
+    --ion-background-color: #D6C9C9;
+
+    .popover-arrow {
+        display: none;
+    }
+    
+    .popover-content {
+        left: 10px !important;
+        width: calc(100% - 20px);
+    }
+
+    .taskInput{
+        background-color: white;
+    }
+
+    .p {
+        text-align: center;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .undone {
+        text-align: center;
+    }
+}
