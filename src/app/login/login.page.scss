@@ -1,21 +1,29 @@
 
 //Adding styling to the text boxes and button. This way they only take up a portion of the screen and not the whole width.
 
-ion-button{
+ion-button.sign{
     width: 40%;
     margin:auto;
-    background-color: #7C238C;
 }
 ion-item{
-    margin:auto;
+    margin: auto;
     width: 60%;
 }
 
 h3{
-    margin:auto;
+    margin: auto;
     text-align: center;
 }
 ion-input{
     border: 1px solid #2a928da9;
     border-radius: 10px;
+}
+p {
+  margin: auto;
+    text-align: center;
+}
+.gle {
+  margin: auto;
+  text-align: center;
+  width: 80%;
 }
