@@ -14,7 +14,8 @@ import { AddPageModule } from '../add/add.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    MondayPageRoutingModule
+    MondayPageRoutingModule,
+    AddPageModule
   ],
   declarations: [MondayPage]
 })

@@ -28,14 +28,12 @@
 .custom-popover {
     --ion-backdrop-opacity: 0.6;
     --ion-background-color: #D6C9C9;
-
+    --width: 90%;
+    --max-width: 400px;
+    --offset-x: -5px;
+    
     .popover-arrow {
         display: none;
-    }
-    
-    .popover-content {
-        left: 10px !important;
-        width: calc(100% - 20px);
     }
 
     .taskInput{

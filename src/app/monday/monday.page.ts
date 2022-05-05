@@ -15,7 +15,7 @@ export class MondayPage implements OnInit {
   ngOnInit() {
   }
 
-  async itemAdd (ev) {
+  async itemAdd(ev) {
     const popover = await this.popoverCtrl.create({
       component: AddPage,
       event: ev,
