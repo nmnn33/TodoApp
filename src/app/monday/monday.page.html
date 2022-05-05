@@ -1,29 +1,29 @@
 <ion-header>
   <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
     <ion-title>Monday</ion-title>
-    <!--PROFILE PICTURE-->
-    <ion-avatar slot="end">
-      <!--PLACEHOLDER PICTURE FOR PROOF-->
-      <img src="https://i.imgur.com/MfrhA8R.jpg">
-    </ion-avatar>
   </ion-toolbar>
 </ion-header>
 
 <!--  -->
 <ion-content>
   <!--HEADER FOR PAGE (MONDAY)-->
-  <ion-row>
+
+  <ion-row style="background-color: #D6C9C9; padding-top: 5px;">
     <ion-col>
       <ion-list-header>
         <h1>Welcome</h1>
       </ion-list-header>
     </ion-col>
-    <ion-col>
+    <ion-col style="align-self: end; padding-left: 100px;">
+      <img src="./assets/appimg.png">
       <!--PLACEHOLDER FOR DUMMY CONTENT-->
     </ion-col>
   </ion-row>
-  
-  <h4>Here you can see todays tasks</h4>
+  <br>
+  <h4>Here you can see today's tasks</h4>
   <ion-grid [fixed]="true">
 
     <!-- ion-row and ion-col used to make content apper as wanted.
@@ -39,7 +39,9 @@ One (1) task for each row-->
       <ion-col>
         <!-- Button for task deletion, colored red "danger"
   used with each task -->
-        <ion-button size="small" color="danger">Delete</ion-button>
+        <ion-button size="small" color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
       </ion-col>
     </ion-row>
     <!--HERE ENDS TASK1 ROW AND BEGINS TASK2 ROW-->
@@ -50,7 +52,9 @@ One (1) task for each row-->
       </ion-col>
 
       <ion-col>
-        <ion-button size="small" color="danger">Delete</ion-button>
+        <ion-button size="small" color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -60,7 +64,9 @@ One (1) task for each row-->
       </ion-col>
 
       <ion-col>
-        <ion-button size="small" color="danger">Delete</ion-button>
+        <ion-button size="small" color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -70,7 +76,9 @@ One (1) task for each row-->
       </ion-col>
 
       <ion-col>
-        <ion-button size="small" color="danger">Delete</ion-button>
+        <ion-button size="small" color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
       </ion-col>
     </ion-row>
   </ion-grid>

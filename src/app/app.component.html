@@ -5,9 +5,6 @@
         <ion-list id="lista">
           <!--Tässä on kuva ja nappi sulkea sidebar sekä nimi käyttäjälle, joka on nyt User Testing-->
           <ion-item>
-            <ion-avatar slot="start">
-              <img src="https://i.imgur.com/MfrhA8R.jpg">
-            </ion-avatar>
             <ion-button slot="end" fill="clear" class="sulje">
               <ion-menu-toggle>
                 <ion-icon name="close-outline" class="suljeIcon"></ion-icon>
@@ -21,10 +18,6 @@
             <ion-item routerDirection="root" [routerLink]="['./home']" lines="none" detail="false"
               routerLinkActive="selected">
               <ion-label>Home</ion-label>
-            </ion-item>
-            <ion-item routerDirection="root" [routerLink]="['./add']" lines="none" detail="false"
-              routerLinkActive="selected">
-              <ion-label>Add task</ion-label>
             </ion-item>
           </ion-menu-toggle>
           <hr>
@@ -41,9 +34,7 @@
             <ion-item routerDirection="root" [routerLink]="['./login']" lines="none" detail="false"
               routerLinkActive="selected">
               <ion-label class="signOut">Sign out</ion-label>
-              <img
-                src="https://media.istockphoto.com/vectors/checklist-clipboard-and-pencil-icon-flat-design-on-white-background-vector-id1269452744?s=612x612"
-                class="alaKuva">
+              <img src="./assets/Logo.png" class="alaKuva">
             </ion-item>
           </ion-menu-toggle>
         </ion-list>

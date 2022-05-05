@@ -1,22 +1,35 @@
-
-
-
 <ion-content>
   <!-- Adding basic text fields and a button for the login page. The button just redirects to home -->
-  <br><br><br><br><br><br><br>
+  <ion-row style="background-color: #C7D3DD; padding-top: 5px;">
+    <ion-col>
+      <img src="./assets/Logo.png" class="alaKuva">
+      <h1 style="font-size: 24px">Todos'</h1>
+    </ion-col>
+    <ion-col style="align-self: end; padding-left: 100px;">
+      <img src="./assets/appimg.png">
+      <!--PLACEHOLDER FOR DUMMY CONTENT-->
+    </ion-col>
+  </ion-row>
+  <br><br><br>
   <h3>Welcome to ToDos' app.</h3>
   <h3 id="title"> Sign in and start planning!</h3>
   <br>
   <ion-item lines="none">
     <ion-label position="stacked">Username</ion-label>
     <ion-input id="username"></ion-input>
-    </ion-item>
-  <br>
-  <ion-item lines="none">
-  <ion-label position="stacked">Password</ion-label>
-  <ion-input id="password"></ion-input>
   </ion-item>
   <br>
-  <ion-button expand="block" id="button">Sign In</ion-button>
-  <!-- routerLink="/home" routerDirection="root"  -->
+  <ion-item lines="none">
+    <ion-label position="stacked">Password</ion-label>
+    <ion-input id="password"></ion-input>
+  </ion-item>
+  <br>
+  <ion-button class="sign" expand="block" id="button">Sign In</ion-button>
+  <br>
+  <p>Or</p>
+  <br>
+
+  <ion-button class="gle" expand="block"><img src="./assets/logogoogleg.png">&nbsp;&nbsp;&nbsp;&nbsp;Sign in with Google
+  </ion-button>
+
 </ion-content>
