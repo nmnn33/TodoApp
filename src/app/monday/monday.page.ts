@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PopoverController } from '@ionic/angular';
 import { Router } from '@angular/router';
 import { AddPage } from '../add/add.page';
+import { AngularFirestoreModule } from '@angular/fire/compat/firestore'
 
 @Component({
   selector: 'app-monday',
@@ -10,7 +11,10 @@ import { AddPage } from '../add/add.page';
 })
 export class MondayPage implements OnInit {
 
-  constructor(private popoverCtrl: PopoverController, private router: Router) { }
+  constructor(private popoverCtrl: PopoverController, private router: Router,
+    private afFirestore: AngularFirestoreModule) { }
+
+    add() {}
 
   ngOnInit() {
   }
