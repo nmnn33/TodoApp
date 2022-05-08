@@ -17,6 +17,8 @@ export class LoginPage implements OnInit {
     const element = document.getElementById("button");
     const google = document.getElementById("google");
     google.addEventListener("click", function(){
+      document.getElementById("title").innerHTML = "Sign in and start planning!";
+      document.getElementById("title").style.color = "#000000";
       self.router.navigate(["/home"])
     });
     element.addEventListener("click", function(){
@@ -28,18 +30,22 @@ export class LoginPage implements OnInit {
       if(j == "" && i == "") {
         document.getElementById("title").innerHTML = "Enter username and password please!";
         console.log("enter username and pw");
+        document.getElementById("title").style.color = "#ff0000";
       } else if(i == ""){
         document.getElementById("title").innerHTML = "Enter password please!";
         console.log("enter pw");
+        document.getElementById("title").style.color = "#ff0000";
       } else if(j == ""){
         document.getElementById("title").innerHTML = "Enter username please!";
         console.log("enter username");
+        document.getElementById("title").style.color = "#ff0000";
       }
        else {
          //Changing the title back to the default title in case it was changed to some other text by the errors previously.
          //This needed to be done as otherwise if you came back to the page it would still display the "Enter X please!" messages.
         document.getElementById("title").innerHTML = "Sign in and start planning!";
         console.log("You entered something in the fields");
+        document.getElementById("title").style.color = "#000000";
         //Navigating to the home page with the router.
         self.router.navigate(["/home"])
       }
