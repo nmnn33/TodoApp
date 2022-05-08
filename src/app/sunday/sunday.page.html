@@ -1,9 +1,93 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>sunday</ion-title>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Sunday</ion-title>
   </ion-toolbar>
 </ion-header>
 
+<!--  -->
 <ion-content>
+  <!--HEADER FOR PAGE (Sunday)-->
+
+  <ion-row style="background-color: #D6C9C9; padding-top: 5px;">
+    <ion-col>
+      <ion-list-header>
+        <h1>Welcome</h1>
+
+      </ion-list-header>
+    </ion-col>
+    <ion-col style="align-self: end; padding-left: 100px;">
+      <img src="./assets/appimg.png">
+      <!--PLACEHOLDER FOR DUMMY CONTENT-->
+    </ion-col>
+  </ion-row>
+  <br>
+  <h4>Here you can see today's tasks</h4>
+  <ion-grid [fixed]="true">
+
+    <!-- ion-row and ion-col used to make content apper as wanted.
+One (1) task for each row-->
+    <ion-row>
+      <!-- size 9 used to make checkox and delete appear as wanted-->
+      <ion-col size="9" class="col-up">
+        <ion-checkbox></ion-checkbox>
+        <!-- Here would be task 1-->
+        Google for gym memberships
+      </ion-col>
+
+      <ion-col>
+        <!-- Button for task deletion, colored red "danger"
+  used with each task -->
+        <ion-button size="small" color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <!--HERE ENDS TASK1 ROW AND BEGINS TASK2 ROW-->
+    <ion-row>
+      <ion-col size="9">
+        <ion-checkbox></ion-checkbox>
+        Check bio-compost bin
+      </ion-col>
+
+      <ion-col>
+        <ion-button size="small" color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="9">
+        <ion-checkbox></ion-checkbox>
+        05:00 PM, dinner with family
+      </ion-col>
+
+      <ion-col>
+        <ion-button size="small" color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="9">
+        <ion-checkbox></ion-checkbox>
+        Go to bed early
+      </ion-col>
+
+      <ion-col>
+        <ion-button size="small" color="danger">
+          <ion-icon name="trash"></ion-icon>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <!--BUTTON FOR ADDING A NEW TASK-->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button color="danger" tappable (click)="itemAdd($event)">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
 
 </ion-content>
